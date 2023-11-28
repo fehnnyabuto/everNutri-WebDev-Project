@@ -1,0 +1,235 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Start Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>Online Marketplace<span class="d-block"> For Organic, Locally-sourced Nutritious Food</span></h1>
+                        <p class="mb-4">A variety of healthy nutritious options.</p>
+                        <p><a href="{% url 'shop-url' %}" class="btn btn-secondary me-2">Shop</a><a href="{% url 'sell-url' %}" class="btn btn-white-outline">Sell</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    {#                <div class="hero-img-home">#}
+                    {#                    <img src="images/couch.png" class="img-fluid">#}
+                    <img src="{% static 'images/home-images/shhhhhhoppppnnn.jpg' %}" class="img-fluid home-picha">
+                    <img src="{% static 'images/home-images/EverNutriBg.png' %}" class="img-fluid home-picha ml-5 mb-4">
+                    {#                </div>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Start Product Section -->
+    <div class="product-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Start Column 1 -->
+                <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <h2 class="mb-4 section-title">Wide Variety of Products To Choose From</h2>
+                    <p>We have foods ranging from farm-to-table products such as vegetables and fruits to
+                    organic snacks such as energy bars and healthy pastries</p>
+                    <p class="mb-4">Take a look at this week's featured items</p>
+                    <p><a href="shopping.html" class="btn">Shop</a></p>
+                </div>
+                <!-- End Column 1 -->
+
+
+
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="products/cart.html">
+                        <img src="{% static 'images/prod-images/pulsitos.jpg' %}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Pulsitos Snack Bar</h3>
+                        <p>Contains Proteins, Sodium and Dietary Fibre</p>
+                        <strong class="product-price">Ksh. 250</strong>
+
+                        <span class="icon-cross">
+								<img src="{% static 'images/cross.svg' %}" class="img-fluid">
+							</span>
+                    </a>
+                </div>
+                <!-- End Column 3 -->
+
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="products/cart.html">
+                        <img src="{% static 'images/prod-images/doughp.jpg' %}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Doughp Cookies</h3>
+                        <p>Rich in Carbohydrate and Protein</p>
+                        <strong class="product-price">Ksh 300</strong>
+
+                        <span class="icon-cross">
+								<img src="{% static 'images/cross.svg' %}" class="img-fluid">
+							</span>
+                    </a>
+                </div>
+                <!-- End Column 2 -->
+
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="products/cart.html">
+                        <img src="{% static 'images/prod-images/behealthy.jpg' %}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">BeHealthy Juice</h3>
+                        <p>Rich in Vitamin C</p>
+                        <strong class="product-price">Ksh. 420</strong>
+
+                        <span class="icon-cross">
+								<img src="{% static 'images/cross.svg' %}" class="img-fluid">
+							</span>
+                    </a>
+                </div>
+                <!-- End Column 4 -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+
+    <!-- Start Why Choose Us Section -->
+    <div class="why-choose-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p>Here's why everNutri should be your online marketplace of choice</p>
+
+                    <div class="row my-5">
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/truck.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Fast Shipping</h3>
+                                <p>Have your products delivered to yoou within 3 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/return.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Product Information</h3>
+                                <p>Nutritional information is provided for each product. Now you can make health-conscious decisions while you shop.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/bag.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Easy to Shop</h3>
+                                <p>Friendly user interface that makes it easy to navigate between the pages.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/support.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>24/7 Support</h3>
+                                <p>Contact us at any time.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="img-wrap">
+                        <img src="{% static 'images/home-images/pexels-kindel-media-6868178.jpg' %}" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us Section -->
+
+    <!-- Start We Help Section -->
+    <div class="we-help-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="imgs-grid">
+                        <div class="grid grid-1"><img src="{% static 'images/home-images/grid1.jpg' %}" alt="Image.co"></div>
+                        <div class="grid grid-2"><img src="{% static 'images/home-images/grid2.jpg' %}" alt="Image.co"></div>
+                        <div class="grid grid-3"><img src="{% static 'images/home-images/grid3.jpg' %}" alt="Image.co"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <h2 class="section-title mb-4">Let Us Help You Make Health-Conscious Decisions</h2>
+                    <p>Here at everNutri, serving customers is at the heart of everything we do.</p>
+
+                    <ul class="list-unstyled custom-list my-4">
+                        <li>The nutritional benefits of each product are provided</li>
+                        <li>Products from our website are fresh and of the best quality</li>
+                    </ul>
+
+                    <p><a herf="{% url 'shop-url' %}" class="btn my-nav-btn">Shop</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End We Help Section -->
+
+    <!-- Start Popular Product -->
+    <div class="popular-product">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/home-images/nutrish.jfif' %}" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="pt-3">
+                            <h3>Nutritious</h3>
+                            <p>A wide range of organic, healthy food options</p>
+                            {#                        <p><a href="#">Read More</a></p>#}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/home-images/veges.jpg' %}" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="pt-3">
+                            <h3>Fresh</h3>
+                            <p>We work directly with local producers so as to bring you fresh products in tip-top condition</p>
+                            {#                        <p><a href="#">Read More</a></p>#}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/home-images/delish.jfif' %}" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="pt-3">
+                            <h3>Delicious</h3>
+                            <p>We taste all our products to ensure that they are flavorful.</p>
+                            {#                        <p><a href="#">Read More</a></p>#}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Popular Product -->
+
+
+{% endblock %}

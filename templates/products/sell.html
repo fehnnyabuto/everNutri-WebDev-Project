@@ -1,0 +1,12 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <h2 class="text-center">Insert your product details</h2>
+    <section class="container sell-form mt-3 ml-5 mb-4">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-black" type="submit">Save</button>
+        </form>
+    </section>
+{% endblock %}

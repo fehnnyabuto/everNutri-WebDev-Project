@@ -1,0 +1,24 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    {{ message }}
+    <h2 class="mt-2 text-center">Shop for products</h2><br>
+    <section class="shop-form bidhaa-zote">
+            <section class="bidhaa row-cols-auto flex-md-wrap">
+                {% for product in products %}
+                    <div class="col-sm-3">
+                        <p><a href="#">
+                            <img src="{% static '../' %}{{ product.image }}" alt="product-image" class="product-image img-fluid">
+                        </a></p>
+                        <p>{{ product.name }}</p>
+                        <p>{{ product.description }}</p>
+                        <p>Ksh. {{ product.price }}</p>
+                        <a href="/products/checkout/{{ product.id }}" class="btn btn-shop py-2" type="submit">Buy Now</a><br><br>
+                        <a href="/products/update/{{ product.id }}" class="btn btn-shop py-2" type="submit">Update</a>
+                        <a href="/products/delete/{{ product.id }}" class="btn btn-shop py-2" type="submit">Delete</a>
+
+                    </div>
+                {% endfor %}
+            </section>
+    </section>
+{% endblock %}

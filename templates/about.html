@@ -1,0 +1,142 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <!-- Start Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>About Us</h1>
+                        <p class="mb-4">With a passion for health and nutrition, we strive to provide you with the best quality of products.</p>
+                        <p><a href="{% url 'shop-url' %}" class="btn btn-secondary me-2">Shop Now</a><a href="{% url 'sell-url' %}" class="btn btn-white-outline">Sell</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="{% static 'images/other-images/about.jpg' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+
+
+    <!-- Start Why Choose Us Section -->
+    <div class="why-choose-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p>Here's why everNutri should be your online marketplace of choice</p>
+
+                    <div class="row my-5">
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/truck.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Fast Shipping</h3>
+                                <p>Have your products shipped to your location fast.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/return.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Product Information</h3>
+                                <p>Nutritional information is provided for each product. Now you can make health-conscious decisions while you shop.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/bag.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Easy to Shop</h3>
+                                <p>Friendly user interface that makes it easy to navigate between the pages.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/support.svg' %}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>24/7 Support</h3>
+                                <p>Contact us at any time.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="img-wrap">
+                        <img src="{% static 'images/home-images/pexels-kindel-media-6868178.jpg' %}" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us Section -->
+
+    <!-- Start Team Section -->
+    <div class="untree_co-section">
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="col-lg-5 mx-auto text-center">
+                    <h2 class="section-title">Our Team</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Start Column 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <img src="{% static 'images/other-images/pexels-george-milton-6953924.jpg' %}" class="img-fluid mb-5">
+                    <h3 clas><a href="#"><span class="">Fehn</span> Nyabuto</a></h3>
+                    <span class="d-block position mb-4">CEO, Founder, everNutri.</span>
+                    <p>"At the intersection of taste and well-being, our mission is to redefine the way the world eats."</p>
+                </div>
+                <!-- End Column 1 -->
+
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <img src="{% static 'images/other-images/pexels-yaroslav-shuraev-8844902.jpg' %}" class="img-fluid mb-5">
+
+                    <h3 clas><a href="#"><span class="">Yaroslav</span> Shuraev</a></h3>
+                    <span class="d-block position mb-4">Nutritionist, Co-founder, everNutri.</span>
+                    <p>"Nourish your body, and savor the goodness of real, wholesome food."</p>
+
+                </div>
+                <!-- End Column 2 -->
+
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <img src="{% static 'images/other-images/pexels-tima-miroshnichenko-6389075.jpg' %}" class="img-fluid mb-5">
+                    <h3 clas><a href="#"><span class="">Tima</span> Mirochenko</a></h3>
+                    <span class="d-block position mb-4">Health Instructor, everNutri.</span>
+                    <p>"Healthy mind, healthy body. Good food is a commitment to a healthier, happier life."</p>
+                </div>
+                <!-- End Column 3 -->
+
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <img src="{% static 'images/other-images/pexels-genuine-anthony-12991914.jpg' %}" class="img-fluid mb-5">
+                    <h3 clas><a href="#"><span class="">Genuine</span> Anthony</a></h3>
+                    <span class="d-block position mb-4">CFO, Co-founder, everNutri.</span>
+                    <p>"Health is not just about what you're eating. It's also about what you're thinking and saying."</p>
+                </div>
+                <!-- End Column 4 -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Team Section -->
+{% endblock %}
