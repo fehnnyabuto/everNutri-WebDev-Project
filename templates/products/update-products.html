@@ -1,6 +1,7 @@
 {% extends 'master.html' %}
 {% load static %}
 {% block content %}
+    <br>
     <div class="row d-flex col-4 m-auto">
         <form method="post" action="/products/update/{{ product.id }}" enctype="multipart/form-data">
             {% csrf_token %}

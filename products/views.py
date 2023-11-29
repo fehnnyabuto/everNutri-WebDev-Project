@@ -68,7 +68,7 @@ def checkout(request, id):
             "PhoneNumber": phone,
             "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
             "AccountReference": "PYMENT001",
-            "TransactionDesc": "School fees"
+            "TransactionDesc": "Product payment"
         }
 
         response = requests.post(api_url, json=request, headers=headers)
