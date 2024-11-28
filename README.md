@@ -1,7 +1,7 @@
 # everNutri-WebDev-Project
 Online Marketplace for Organic, Nutritious, Locally-sourced Food   
 
-##home page   
+# home page   
 ![image](https://github.com/fehnnyabuto/everNutri-WebDev-Project/assets/70171779/2dce9341-b4aa-461c-988c-84efb6552ac4)   
 ![image](https://github.com/fehnnyabuto/everNutri-WebDev-Project/assets/70171779/eb201050-25d8-4cf7-affc-1b6f56dda90a)   
 ![image](https://github.com/fehnnyabuto/everNutri-WebDev-Project/assets/70171779/01ebc215-0dd6-4804-8ce8-8eff0851a7ba)   
